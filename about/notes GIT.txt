@@ -1,0 +1,47 @@
+﻿GIT Conspect
+
+$ git config --global user.name "andregarkin"
+$ git config --global user.email "andregarkin@gmail.com"
+
+$ cd d:/storage/codestorage/tm-cms.local/web
+
+# create repo in any folder (empty or not)
+$ git init
+
+$ git remote add tm-cms https://github.com/andregarkin/tm-cms.git
+
+# Pull from repository 'tm-cms', /master catalog
+$ git pull tm-cms master 
+
+$ git touch index.php ( or touch README.md for example)
+
+# after modifying index.php you can:
+$ git checkout index.php  // undo changes
+# or you can:
+$ git add index.php       // add (indexing) changes
+
+# after adding you can:
+$ git reset HEAD index.php // undo indexing changes (unstage)
+# or: 
+
+$ git commit -m "comment"
+$ git push tm-cms master
+
+$ git add . // indexing changes in current catalog
+$ git status
+
+# History:
+$ git log --pretty=oneline --max-count=10
+$ git log --all --pretty=format:"%h %cd %s (%an)" --since='7 days ago'
+$ git log --pretty=format:"%ad | %s%d [%an]" --graph --date=short --max-count=10
+
+%ad - adding date
+%s  - string message
+%d  - commit description (from git)
+%an - author name
+
+# add command alias:
+git config --global alias.hist 'log --pretty=format:"%ad | %s%d [%an]" --graph --date=short --max-count=10'
+
+
+
