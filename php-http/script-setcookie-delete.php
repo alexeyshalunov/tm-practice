@@ -1,6 +1,6 @@
 <?php
 
-// Óäàëÿåì Cookie 'Test':
+//Â Ð£Ð´Ð°Ð»ÑÐµÐ¼Â CookieÂ 'Test':
 SetCookie("Test","");
 
 SetCookie("Mortal","");

@@ -2,14 +2,14 @@
 
 
 if(!isset($_SERVER['PHP_AUTH_USER'])) {
-  header('WWW-Authenticate: Basic realm="My Realm"');
-  header('HTTP/1.0 401 Unauthorized');
-  echo 'Текст, отправляемый в том случае, если пользователь нажал кнопку Cancel';
+  header('WWW-Authenticate:В BasicВ realm="MyВ Realm"');
+  header('HTTP/1.0В 401В Unauthorized');
+  echo 'РўРµРєСЃС‚,В РѕС‚РїСЂР°РІР»СЏРµРјС‹Р№В РІВ С‚РѕРјВ СЃР»СѓС‡Р°Рµ, РµСЃР»РёВ РїРѕР»СЊР·РѕРІР°С‚РµР»СЊВ РЅР°Р¶Р°Р»В РєРЅРѕРїРєСѓВ Cancel';
   //exit;
 }
 else {
-  echo "<p>Hello {$_SERVER['PHP_AUTH_USER']} . </p>";
-  echo "<p>Вы ввели пароль {$_SERVER['PHP_AUTH_PW']} . </p>";
+  echo "<p>HelloВ {$_SERVER['PHP_AUTH_USER']} . </p>";
+  echo "<p>Р’С‹В РІРІРµР»РёВ РїР°СЂРѕР»СЊВ {$_SERVER['PHP_AUTH_PW']} . </p>";
 }
 
 echo "<p><a href='./script-http-auth-in-order.php'>Proceed to HTTP Auth test In Order</a></p>";

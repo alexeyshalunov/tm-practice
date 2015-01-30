@@ -2,7 +2,7 @@
    function authenticate() {
      header('WWW-Authenticate: Basic realm="Test Authentication System"');
      header('HTTP/1.0 401 Unauthorized');
-     echo "Вы должны ввести корректный логин и пароль для получения доступа к ресурсу \n";
+     echo "Р’С‹ РґРѕР»Р¶РЅС‹ РІРІРµСЃС‚Рё РєРѕСЂСЂРµРєС‚РЅС‹Р№ Р»РѕРіРёРЅ Рё РїР°СЂРѕР»СЊ РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ РґРѕСЃС‚СѓРїР° Рє СЂРµСЃСѓСЂСЃСѓ \n";
      exit;
    }
   
@@ -11,12 +11,12 @@
     authenticate();
    } 
    else {
-    echo "<p>Добро пожаловать: {$_SERVER['PHP_AUTH_USER']}<br />";
-    echo "Предыдущий логин: {$_REQUEST['OldAuth']}";
+    echo "<p>Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ: {$_SERVER['PHP_AUTH_USER']}<br />";
+    echo "РџСЂРµРґС‹РґСѓС‰РёР№ Р»РѕРіРёРЅ: {$_REQUEST['OldAuth']}";
     echo "<form action='{$_SERVER['PHP_SELF']}' METHOD='post'>\n";
     echo "<input type='hidden' name='SeenBefore' value='1' />\n";
     echo "<input type='hidden' name='OldAuth' value='{$_SERVER['PHP_AUTH_USER']}' />\n";
-    echo "<input type='submit' value='Авторизоваться повторно' />\n";
+    echo "<input type='submit' value='РђРІС‚РѕСЂРёР·РѕРІР°С‚СЊСЃСЏ РїРѕРІС‚РѕСЂРЅРѕ' />\n";
     echo "</form></p>\n";
    }
 ?> 
