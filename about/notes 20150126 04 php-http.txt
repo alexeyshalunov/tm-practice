@@ -1,4 +1,4 @@
-userXX:v5z2sdXX
+:v5z2sdXX
 
 192.168.100.13 3128
 
