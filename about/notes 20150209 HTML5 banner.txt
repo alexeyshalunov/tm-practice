@@ -1,0 +1,18 @@
+HTML
+
+Верстка: блочная, табличная,
+
+
+Важный стиль для того чтоб обозначить как обрабатывать свойства "ширина" и "высота" блоков:
+
+*{
+
+    -webkit-box-sizing: border-box;
+
+    -moz-box-sizing: border-box;
+
+    box-sizing: border-box;
+
+}
+
+
