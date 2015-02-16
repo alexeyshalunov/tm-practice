@@ -1,6 +1,4 @@
-﻿:v5z2sdXX
-
-PHP and HTTP
+﻿PHP and HTTP
 
 L1131 - take OpenServer
 
