@@ -1,0 +1,120 @@
+body { font-family: Arial, Helvetica, sans-serif; }
+p{font-weight: bold;}
+
+p.custom{font-weight: bold; color: grey;}
+.custom{font-weight: bold; color: blue;
+
+margin-right: 20px;
+padding-top: 3em;
+margin-left: 10%;
+
+margin: 0 10px 10px 20px;
+padding: 10px 5px 5px 10px;
+
+display:inline;
+
+
+}
+
+h1{color:blue;font-size:14px;}
+
+p.feature { 
+  font-family: Arial, Helvetica, sans-serif; 
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-variant: small-caps;
+  text-decoration: underline overline;
+  /*text-decoration: overline;*/
+  letter-spacing: -1px;
+  word-spacing: 2px;
+  text-shadow: -4px 4px 3px #999999;
+  text-align: center;
+  text-indent: 25px;
+  margin-top: 0; 
+  margin-bottom: 0;
+  
+  color: green;
+  
+  margin-top:10px;
+  margin-right:5px;
+  margin-bottom:10px;
+  margin-left:5px;
+}
+
+p:first-letter {
+font-size: 1.5em; 
+font-weight: bold; 
+color: red;
+}
+
+a { font-size: 24px; }
+
+td { 
+padding: 10px 5px 3px 5px;
+border: 1px solid black; 
+border-radius: 5px; 
+}
+
+table {
+text-align: right;
+border-spacing: 2px; 
+}
+
+
+
+.floatRight { float: right; }
+
+.sidebar {
+float: left; 
+width: 910px;
+border: 1px solid grey;
+}
+
+
+#footer {
+  clear: both;
+  border: 1px solid red;
+}
+
+
+.banner {
+position: absolute;
+left: 100px;
+top: 50px;
+
+width: 760px;
+height: 150px;
+}
+
+.outer { 
+position: relative;
+
+width: 760px;
+height: 150px;
+
+}
+
+.clearfix {
+  clear:both;
+}
+
+
+
+.box { 
+position: absolute; 
+right: 0; 
+top: 0; 
+width: 50px; 
+height: 50px; 
+background-color: #333;
+}
+
+
+h1 { position: relative; }
+h1 img { 
+position: absolute;
+top: 0; 
+right: 0;
+}
