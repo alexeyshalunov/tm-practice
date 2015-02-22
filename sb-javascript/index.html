@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<title>
+		Використання функцій
+		</title>
+		
+		<meta charset="UTF-8">
+		<script type="text/javascript">
+		
+				
+		outerloop:
+		for(var i = 0; i < 10; i++) {
+			innerloop:
+			for(var j = 0; j < 10; j++) {
+			if (j > 3) break; 		// Вихід із самого внутрішнього циклу
+			if (i == 2) break innerloop; 	// Те ж саме
+			if (i == 4) break outerloop; 	// Вихід із зовнішнього циклу
+			}		
+		}
+
+		
+		
+		
+		
+		
+		function cube(value) {
+			return value * value * value;
+		}
+		
+		
+		function print(msg){
+			document.write(msg, "<br>");
+		}
+
+		function distance(x1, y1, x2, y2){
+			var dx = x2-x1;
+			var dy = y2-y1;
+			return Math.sqrt(dx*dx + dy*dy);
+		}
+
+		function factorial(x){
+			if (x <= 1)
+			return 1;
+			return x * factorial(x-1);
+		}
+
+		//print("Привіт, " + name);
+		//print(" Ласкаво просимо на мою домашню сторінку!");
+		//total_dist = distance(0,0,2,1) + distance(2,1,3,5);
+		//print("Імовірність цього рівна: " + factorial(5)/factorial(13));
+		</script>
+		
+		<script type="text/javascript" src="./js/scripts.js" ></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+		var x = cube(3);
+		
+		print('Print!');
+		</script>
+	</body>
+</html>

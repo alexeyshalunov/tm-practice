@@ -1,0 +1,17 @@
+git notes:
+
+//Показ настройки для каррент юзера, из файла:
+// C:\Users\$USER\.gitconfig
+$ git config --global --list
+
+// Показать настройки для ОС, из файла
+// pathToGit/etc/gitcofig
+$ git config --system --list
+
+// Показ настройки для каррент репозитория
+// .git/config
+$ git config --local --list
+
+$git help config
+
+$git clone https://proj-url.git
