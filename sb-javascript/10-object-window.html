@@ -1,0 +1,82 @@
+<html>
+	<head>
+		<title>
+      Window Object
+		</title>
+		<meta charset="UTF-8">
+    
+    <script type="text/javascript" src="./js/scripts.js" ></script>
+
+		
+	</head>
+	<body>
+    <h5>Window Object</h5>
+    <pre>
+    Window properties: 
+    parent повертає батьківське для поточного вікно;
+    self повертає посилання на поточне вікно;
+    top повертає посилання на головне вікно;
+    name назва вікна;
+    opener вікно, що створюється поточним;
+    closed повідомляє, якщо вікно закрите;
+    status текст, що показується в рядку стану браузера;
+    defaultStatus текст за замовчуванням рядка стану браузера;
+    returnValue дозволяє визначити значення для події або діалогового вікна;
+    client посилання, яке повертає об'єкт навігатора браузеру;
+    document посилання на об'єкт вікна document (тільки для читання);
+    event посилання на глобальний об'єкт event (тільки для читання);
+    history посилання на об'єкт вікна history (тільки для читання);
+    location посилання на об'єкт вікна location (тільки для читання);
+    navigator посилання на об'єкт вікна navigator (тільки для читання);
+    screen посилання тільки для читання на глобальний об'єкт screen.
+    
+    Window methods:
+    
+    ореn() відкриває нове вікно браузера;
+    close() закриває поточне вікно браузера;
+    showHelp() показує вікно підказки як діалогове;
+    showModalDialog() показує нове вікно як діалогове (модальне);
+    alert() показує вікно попередження з повідомленням і кнопкою ОК;
+    prompt() показує вікно запрошення з повідомленням, текстовим полем і
+    кнопками ОК і Cancel (Скасування);
+    confirm() показує вікно підтвердження з повідомленням і кнопками ОК і
+    Cancel(Скасування);
+    navigate() завантажує іншу сторінку із зазначеною адресою;
+    blur() забирає фокус із поточної сторінки; відповідна подія - onblur;
+    focus () встановлює сторінку у фокус; відповідна подія - onfocus;
+    scroll() розвертає вікно на задані ширину й висоту;
+    setInterval() вказує процедурі виконуватися періодично через задану кількість
+    мілісекунд;
+    setTimeout() запускає програму через задану кількість мілісекунд після
+    завантаження сторінки;
+    clearInterval() обнуляє таймер, заданий методом setInterval();
+    clearTimeout() обнуляє таймер, заданий методом setTimeout();
+    execScript() виконує код сценарію; за замовчуванням Jscript.
+    onblur вихід вікна з фокуса;
+    onfocus вікно стає активним;
+    onhelp натискання користувачем клавіші F1 ;
+    onresize зміна користувачем розмірів вікна;
+    onscroll прокручування вікна користувачем;
+    onerror помилка при передачі;
+    onbeforeunload перед вивантаженням сторінки, що дозволяє
+    зберегти дані;
+    onload сторінка повністю завантажена;
+    onunload безпосередньо перед вивантаженням сторінки.
+    <code>
+    ...
+    window.status="виконується код Javascript";
+    
+    var w = window.open("s.html", "smallwin","width=400,height=350,status=yes,resizable=yes");
+    w.close();
+    ...
+    </code>
+    </pre>
+		<script type="text/javascript">
+    window.status="виконується код Javascript";
+    
+    var w = window.open("s.html", "smallwin","width=400,height=350,status=yes,resizable=yes");
+    //w.close();
+		</script>    
+    <p>Proceed to: &lt;-<a href="09-object-object.html">Object Object. 09-object-object.html</a> - <a href="11-object-document.html">Document Object . 11-object-document.html</a> -&gt;</p>
+	</body>
+</html>

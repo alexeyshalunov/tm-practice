@@ -12,16 +12,78 @@
 	<body>
     <h5>Object Object</h5>
     <pre>
-    ...
-    
-
     <code>
-
+    var empty = {}; // Об'єкт без властивостей
+    var point = { x:0, y:0 };  /* Об'єкт point (точка), точка має властивості: координати.
+      Їхнє значення дорівнює (0;0)*/
+      
+    var circle = { x:point.x, y:point.y+1, radius:2 };  /* Об'єкт circle (коло), посилається на об'єкт point і додає свою
+      властивість radius(радіус) */
+      
+    circle = new Object();
+    circle.x=0;
+    circle.y = 1;
+    circle.radius =2;
+    
+    function Figure(w, h) {
+    this.width = w;
+    this.height = h;
+    }
+    
+    var r1 = new Figure(5,8); // r1 = { width:5, height:8 };
+    var r2 = new Figure(12,2); // r2 = { width:12, height:2 };
+    
+    function Square(r) { return r.width * r.height; }
+    var f= Square(r1);
+    function Figure(w, h) {
+    this.width = w;
+    this.height = h;
+    this.square = function( ) { return this.width * this.height; }
+    }
+    
+    var r1 = new Figure(5,8);
+    var a=r1.square(); //Значення а=40;
+    
+    Figure.prototype.perimetr = function() { return 2*(this.width + this.height); }
+    var p=r1.perimetr(); //Значення p=26
     </code>
     </pre>
 		<script type="text/javascript">
+    var empty = {}; // Об'єкт без властивостей
+    var point = { x:0, y:0 };  /* Об'єкт point (точка), точка має властивості: координати.
+      Їхнє значення дорівнює (0;0)*/
+      
+    var circle = { x:point.x, y:point.y+1, radius:2 };  /* Об'єкт circle (коло), посилається на об'єкт point і додає свою
+      властивість radius(радіус) */
+      
+    circle = new Object();
+    circle.x=0;
+    circle.y = 1;
+    circle.radius =2;
+    
+    function Figure(w, h) {
+    this.width = w;
+    this.height = h;
+    }
+    
+    var r1 = new Figure(5,8); // r1 = { width:5, height:8 };
+    var r2 = new Figure(12,2); // r2 = { width:12, height:2 };
+    
+    function Square(r) { return r.width * r.height; }
+    var f= Square(r1);
+    function Figure(w, h) {
+    this.width = w;
+    this.height = h;
+    this.square = function( ) { return this.width * this.height; }
+    }
+    
+    var r1 = new Figure(5,8);
+    var a=r1.square(); //Значення а=40;
+    
+    Figure.prototype.perimetr = function() { return 2*(this.width + this.height); }
+    var p=r1.perimetr(); //Значення p=26
     
 		</script>    
-    <p>Proceed to: &lt;-<a href="08-object-date.html">Object Date. 08-object-date.html</a> - <a href="10-.html">10. 10-.html</a> -&gt;</p>
+    <p>Proceed to: &lt;-<a href="08-object-date.html">Object Date. 08-object-date.html</a> - <a href="10-object-window.html">Object Window. 10-object-window.html</a> -&gt;</p>
 	</body>
 </html>

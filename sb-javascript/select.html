@@ -1,0 +1,44 @@
+<HTML>
+<HEAD>
+  <TITLE>select.html</TITLE>
+  <meta charset="UTF-8">
+  <script type="text/javascript" src="./js/scripts.js" ></script>
+  
+  <SCRIPT type="text/javascript">
+    <!--
+    function change() {
+      switch (select1.value) {
+        case "1":
+        window.location.href = "file1.html";
+        break;
+        case "2":
+        window.location.href = "file2.html";
+        break;
+      }
+    }
+    //-->
+  </SCRIPT>
+</HEAD>
+
+<BODY>
+  <select id="select1" onchange="change()">
+  <option>Виберіть сторінку</option>
+  <option value="1">Перша сторінка</option>
+  <option value="2">Друга сторінка</option>
+  </select>
+  <br />
+<SCRIPT>
+<!--
+dprint('<b>location.href: </b>');
+document.write(location.href + "<br />");
+
+dprint('<b>location.pathname: </b>');
+document.write(location.pathname + "<br />");
+
+dprint('<b>location.protocol: </b>');
+document.write(location.protocol + "<br />");
+
+//-->
+</SCRIPT>
+</BODY>
+</HTML>

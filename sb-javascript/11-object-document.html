@@ -1,0 +1,118 @@
+<html>
+	<head>
+		<title>
+      Document Object
+		</title>
+		<meta charset="UTF-8">
+    
+    <script type="text/javascript" src="./js/scripts.js" ></script>
+
+		
+	</head>
+	<body>
+    <h5>Document Object</h5>
+    <pre>
+    Document properties:
+    
+    activeElement Ідентифікує активний елемент
+    alinkColor Колір активних посилань на сторінці
+    bgColor Визначає колір фону елемента
+    Body Посилання тільки для читання на неявний основний об'єкт документа, визначений у тегу &lt;BODY&gt;
+    Cookie Рядок cookie-запису. Присвоєння нового значення цій властивості приводить до  запису cookie на диск після закриття браузера
+    Domain Встановлює або повертає домен документа для його захисту або ідентифікації
+    fgColor Встановлює колір тексту переднього плану
+    lastModified Дата останньої зміни сторінки, доступна як рядок
+    linkColor Колір ще не відвіданих гіперпосилань на сторінці
+    Location Повний URL документа
+    parentWindow Повертає батьківське вікно для документа
+    readyState Визначає поточний стан об'єкта, що завантажується
+    Referer URL сторінки, яка викликала поточну
+    Selection Посилання тільки для читання на дочірній для document об'єкт selection
+    Title Визначає довідкову інформацію для елемента, що використовувалась при завантаженні або в спливаючій підказці
+    url Url-адреса документа клієнта або в тегу &lt;META&gt;
+    vlinkColor Колір відвіданих посилань на сторінці
+    
+    
+    Document Collections:
+    
+    all колекція всіх тегів і елементів в основній частині документа;
+    anchors колекція всіх “якорів” (закладок) у документі;
+    applets колекція всіх об'єктів у документі, включаючи вбудовані елементи  керування, графічні елементи, аплети, впроваджені й інші об'єкти;
+    embeds колекція всіх впроваджених об'єктів у документі;
+    forms колекція всіх форм на сторінці;
+    frames колекція всіх фреймів, визначених у тегу &lt;FRAMESET&gt;;
+    images колекція всіх графічних елементів (зображень) на сторінці;
+    links колекція всіх посилань і блоків &lt;AREA&gt; на сторінці;
+    plugins ще одна назва для колекції впроваджених об'єктів документа;
+    scripts колекція всіх розділів &lt;SCRIPT&gt; на сторінці;
+    stylesheets колекція всіх конкретних властивостей стилю, визначених у  документі.
+    
+    Document Methods:
+    
+    clear очищає виділену ділянка;
+    close закриває поточне вікно браузера;
+    createElement створює екземпляр елемента для виділеного тегу;
+    elementFromPoint повертає елемент із заданими координатами;
+    execCommand виконує команду (операцію) над виділенням або областю;
+    getElementById звертається до елемента по ідентифікатору;
+    getElementsByTagName звертається до HTML елементу по його тегу;
+    open відкриває документ як потік для обробки результатів застосування методів write і writein;
+    queryCommandEnabled повідомляє, чи доступна дана команда;
+    queryCommandIndeterm повідомляє, якщо дана команда має невизначений статус;
+    queryCommandState повертає поточний стан команди;
+    queryCommandSupported повідомляє, чи підтримується дана команда;
+    queryCommandText повертає рядок, з яким працює команда;
+    queryCommandValue повертає значення команди, визначене для документа або об'єкта TextRange;
+    write записує текст і код HTML у документ, що знаходиться в зазначеному вікні;
+    writeln записує текст і код HTML і переводить курсор на наступний рядок;.
+    
+    Document Events:
+    
+    onafterupdate виникає при закінченні передачі даних;
+    onbeforeupdate виникає перед вивантаженням сторінки;
+    onclick відбувається при клацанні лівою кнопкою миші;
+    ondblclick відбувається при подвійному клацанні лівою кнопкою миші;
+    ondragstart відбувається, коли користувач починає перетягування;
+    onerror помилка при передачі;
+    onhelp натискання користувачем клавіші F1 ;
+    onkeydown виникає при натисканні клавіші;
+    onkeypress виникає при втриманні клавіші натиснутою;
+    onkeyup виникає, коли користувач відпускає клавішу;
+    onload виникає при повному завантаженні документа;
+    onmousedown відбувається при натисканні кнопки миші;
+    omousemove відбувається при переміщенні покажчика миші;
+    onmouseout відбувається, коли курсор миші виходить за межі елемента;
+    onmouseover відбувається, коли курсор миші наводиться на елемент;
+    onmouseup відбувається, коли користувач відпускає кнопку миші;
+    onreadystatechange виникає при зміні властивості readystate;
+    onselectstart відбувається, коли користувач у перший раз запускає виділену частину документа.
+
+    <code>
+    ...
+    
+    ...
+    </code>
+    </pre>
+    
+    <p id="paragraph-10">Hello, world!</p>
+    
+		<script type="text/javascript">
+    document.write('<table border=1><tbody>'); // Відкриваємо теги елементів  ‹table› і ‹tbody›.;
+    document.write('<tr>'); // Відкриваємо тег елемента ‹tr›.;
+    document.write('<td>' + '1x1' + '<\/td>'); // Виводимо елемент ‹td›.;
+    document.write('<td>' + '1x2' + '<\/td>'); // Виводимо елемент ‹td›.;
+    document.write('<\/tr>'); // Закриваємо тег елемента ‹tr›.;
+    document.write('<\/tbody><\/table>'); // Закриваємо теги елементів  ‹table› і ‹tbody›.;
+    
+    document.getElementsByTagName("body")[0];
+    
+    var tables = document.getElementsByTagName("table");
+    dprint("Кількість таблиць у документі: " + tables.length);
+    
+    var myparagraph = document.getElementsByTagName("p")[9];
+    document.getElementById('paragraph-10');
+
+		</script>    
+    <p>Proceed to: &lt;-<a href="10-object-window.html">Window Object. 10-object-window.html</a> - <a href="12-object-location.html">Location Object . 12-object-location.html</a> -&gt;</p>
+	</body>
+</html>
