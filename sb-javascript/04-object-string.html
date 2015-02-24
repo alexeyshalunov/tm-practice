@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<title>
+      Object String
+		</title>
+		<meta charset="UTF-8">
+    
+    <script type="text/javascript" src="./js/scripts.js" ></script>
+
+		
+	</head>
+	<body>
+    <h5>Object String</h5>
+    <pre>
+    <code>
+    </code>
+    </pre>
+		<script type="text/javascript">
+    mystring = new String ("Hello, world!");
+    var mystring ="Hello, world!";
+    
+    var x = mystring.length;//Присвоїти змінній х значення довжини рядка
+    dprint(x); //Вивести значення х, яке рівне 13
+
+    var mystring ="Hello, ";
+    var x=mystring.concat(" world!"); //Значення х рівно «Hello, world!»
+    var x= mystring+" world!"; // Значення х рівно «Hello, world!»
+
+    var mystring ="Hello, world!";
+    var x= mystring.indexOf('lo') //Значення х дорівнює 2
+    var x= mystring.indexOf('l',5) //Значення х дорівнює 10
+
+    var mystring ="Hello, world!";
+    var x= mystring.substr(7,5); //Значення х дорівнює world
+    
+    
+    var x= mystring.substring(7,12); //Значення х дорівнює world
+    var x= mystring.substring(12,7); //Значення х дорівнює world
+
+    var mystring ="Hello, world!";
+    var x= mystring.slice(0,5); //Значення х дорівнює Hello
+    var x= mystring.slice(0,-8); //Значення х дорівнює Hello
+
+    var mystring ="Hello, world!";
+    var x= new Array();
+    x=mystring.split(' ');//Значення х – масив з елементів “Hello,” і “world!”
+    x=mystring.split('o');//Значення х – масив з елементів “Hell”, “, w”, “rld!”
+    x=mystring.split('o',2);//Значення х – масив з елементів “Hell”, “, w”
+
+    var mystring ="Hello, World!";
+    var x= mystring.toLowerCase(); //Значення х дорівнює hello, world
+    var x= mystring.toUpperCase(); //Значення х дорівнює HELLO, WORLD
+
+    var mystring ="Hello, World!";
+    document.write(mystring.anchor('part1'));
+    /*еквівалентно Html-коду: 
+    <A NAME="part1"> Hello, World! </A>
+    */
+    
+    document.write(mystring.link("http://www.hello-world.com.ua"));
+    /*еквівалентно Html-Коду: <A HREF = " http://www.helloworld.com.ua ")> Hello, World!</А> */
+    
+    document.write(mystring. fontcolor("green"));//текст зеленого кольору;
+    
+    document.write(mystring. fontsize("7"));//розмір шрифту збільшений;
+    
+    
+		</script>    
+    <p>Proceed to: &lt;-<a href="03-array-methods.html">Array Methods. 03-array-methods.html</a> - <a href="05-object-number.html">Object Number. 05-object-number.html</a> -&gt;</p>
+	</body>
+</html>

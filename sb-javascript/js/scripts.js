@@ -1,15 +1,14 @@
 
-function print(msg){
-	document.write(msg, "<br>");
-	
-	
-	
-	
+function dprint(msg){
+	document.write(msg, "<br/>");
+}
+
+function dprint_clr(msg){
+	document.write(msg);
 }
 
 
 
-
-document.write("dgreg reg rge ege eg");
+document.write("Test Output from External file.<br/>");
 
 

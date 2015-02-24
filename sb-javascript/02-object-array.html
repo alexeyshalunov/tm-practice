@@ -1,0 +1,80 @@
+<html>
+	<head>
+		<title>
+      Object Array
+		</title>
+		<meta charset="UTF-8">
+    
+    <script type="text/javascript" src="./js/scripts.js" ></script>
+
+		
+	</head>
+	<body>
+    <h5>Object Array</h5>
+    <pre>
+    <code>
+    var a;
+    // var init a = new Array();
+    // set Type of the var a[0] = 10;
+    // instance of array element 
+    a[1] = true;
+    var b = new Array();
+    // Ініціалізація змінної.
+    b[0] = 'Some text';
+    // Збереження значень у масив. 
+    b[1] = 10 + 20;
+    b[2] = false;
+    b[3] = 1.2;
+    // Дійсне число. 
+    var z = new Array(5, 4, 3, 2, 1, &quot;testing, testing&quot;);
+    var table = new Array(10);
+    // У таблиці 10 рядків 
+    dprint_clr('&lt;table border=&quot;1&quot;&gt;&lt;tr&gt;');
+    for(var row = 0; row &lt; 10; row++) { 
+      // Ініціалізація масиву 
+      table[row] = new Array(10);
+      // У кожному рядку 10 стовпців 
+      dprint_clr('&lt;td&gt;'); 
+      for(var col = 0; col &lt; 10; col++) { 
+        table[row][col] = (row+1)*(col+1);
+        dprint( (row+1) + &quot; * &quot; + (col+1) + &quot; = &quot; + table[row][col] );
+      } 
+      dprint_clr('&lt;/td&gt;');
+    }
+    dprint_clr('&lt;/tr&gt;&lt;/table&gt;');
+    </code>
+    </pre>
+		<script type="text/javascript">
+    var a; // var init
+    a = new Array(); // set Type of the var
+    a[0] = 10; // instance of array element
+    a[1] = true;
+    
+    var b = new Array(); // Ініціалізація змінної.
+    b[0] = 'Some text'; // Збереження значень у масив.
+    b[1] = 10 + 20;
+    b[2] = false;
+    b[3] = 1.2; // Дійсне число.
+    var z = new Array(5, 4, 3, 2, 1, "testing, testing");
+    var table = new Array(10); // У таблиці 10 рядків
+    
+    
+    dprint_clr('<table border="1"><tr>');
+    for(var row = 0; row < 10; row++) {
+      // Ініціалізація масиву
+      table[row] = new Array(10); // У кожному рядку 10 стовпців
+      
+      dprint_clr('<td>');
+      for(var col = 0; col < 10; col++) {
+        table[row][col] = (row+1)*(col+1);
+        dprint( (row+1) + " * " + (col+1) + " = " + table[row][col] );
+      }
+      dprint_clr('</td>');
+      
+    }
+    dprint_clr('</tr></table>');
+    
+		</script>    
+    <p>Proceed to: &lt;-<a href="01-type-of-data.html">Object Array. 01-type-of-data.html</a> - <a href="03-array-methods.html">03-array-methods.html</a> -&gt;</p>
+	</body>
+</html>

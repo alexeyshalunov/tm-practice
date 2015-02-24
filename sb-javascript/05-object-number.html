@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<title>
+      Object Numder
+		</title>
+		<meta charset="UTF-8">
+    
+    <script type="text/javascript" src="./js/scripts.js" ></script>
+
+		
+	</head>
+	<body>
+    <h5>Object Number</h5>
+    <pre>
+    <code>
+    </code>
+    </pre>
+		<script type="text/javascript">
+    parseInt ("ff ", 16) // значення дорівнює 255;
+    parseInt("ff ") // значення дорівнює Nan;
+    parseInt ("010") // значення дорівнює 8;
+    parseInt ("010", 8) // значення дорівнює 8;
+    parseInt("010", 10) // значення дорівнює 10;
+    parseInt("010", 2) // значення дорівнює 2;
+    parseInt("010", 16) // значення дорівнює 17;
+    
+    // methods
+    
+    x = new Number(562);
+    document.write(x.toExponential(3)); //результат дорівнює 5.620е+2;
+    document.write(x.toExponenttal(2)); //результат дорівнює 5.62е+2;
+    document.write(x.toExponential(1)); //результат дорівнює 5.6е+2;
+    document.write(x.toExponential(0)); //результат дорівнює 6.е+2;
+    
+    x=new Number(28.35);
+    document.write(x.toFixed(3)); // результат рівний 28.350;
+    document.write(x.toFixed(2)); // результат рівний 28.35;
+    document.write(x.toFixed(1)); // результат рівний 28.4;
+    document.write(x.toFixed(0)); // результат рівний 28;
+    x=new Number(236.15);
+    document.write(x.toPrecision(6)); // результат рівний 236.150;
+    document.write(x.toPrecision(5)); // результат рівний 236.15;
+    document.write(x.toPrecision(4)); // результат рівний 236.2;
+    document.write(x.toPrecision(3)); // результат рівний 236;
+    document.write(x.toPrecision(2)); // результат рівний 2.4e+2;
+    document.write(x.toPrecision(1)); // результат рівний 2e+2;
+    x=new Number(50);
+    document.write(x.toString()); // результат рівний 50;
+    document.write(x.toString(10)); // результат рівний 50;
+    document.write(x.toString(16)); // результат рівний 32;
+    document.write(x.toString(8)); // результат рівний 62;
+    document.write(x.toString(2)); // результат рівний 110010;
+    
+		</script>    
+    <p>Proceed to: &lt;-<a href="04-object-string.html">Object String. 04-object-string.html</a> - <a href="06-object-boolean.html">Object Boolean. 06-object-boolean.html</a> -&gt;</p>
+	</body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>
+      Array Methods
+		</title>
+		<meta charset="UTF-8">
+    
+    <script type="text/javascript" src="./js/scripts.js" ></script>
+
+		
+	</head>
+	<body>
+    <h5>Array Methods</h5>
+    <pre>
+    <code>
+    </code>
+    </pre>
+		<script type="text/javascript">
+    var d = new Array('Текст', 10/3, 5 * 2); // Заповнюємо масив.;
+    for (var i = 0; i < d.length; i++) // Створюємо цикл.;
+      dprint(d[i]); //Виводимо елемент масиву;
+
+    var a = [1, 2, 3]; // Створює новий масив з трьох елементів;
+    var s = a.join(); // s = "1,2,3“;
+    s = a.join(", "); // s = "1, 2, 3";
+
+    var a = new Array(1,2,3); // a[0] = 1, a[1] = 2, a[2] = 3;
+    a.reverse(); // тепер a[0] = 3, a[1] = 2, a[2] = 1;
+    var s = a.join(); // s = "3,2,1" ;
+
+    var a = new Array("bbb", "ccc", "aaa");
+    a.sort();
+    var s = a.join(", "); // s == "aaa, bbb, ccc“;
+
+    var a = [33, 4, 1111, 222];
+    a.sort(); // Алфавітний порядок: 1111, 222, 33, 4;
+    a.sort(function(a,b) { // Числовий порядок: 4, 33, 222, 1111;
+    return a-b; 
+    }); // Повертає значення < 0, 0, або > 0;
+		</script>    
+    <p>Proceed to: &lt;-<a href="02-object-array.html">Object Array. 02-object-array.html</a> - <a href="04-object-string.html">Object String. 04-object-string.html</a> -&gt;</p>
+	</body>
+</html>

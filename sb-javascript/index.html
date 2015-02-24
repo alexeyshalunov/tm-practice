@@ -3,11 +3,10 @@
 		<title>
 		Використання функцій
 		</title>
-		
 		<meta charset="UTF-8">
+    
+    <script type="text/javascript" src="./js/scripts.js" ></script>
 		<script type="text/javascript">
-		
-				
 		outerloop:
 		for(var i = 0; i < 10; i++) {
 			innerloop:
@@ -17,20 +16,11 @@
 			if (i == 4) break outerloop; 	// Вихід із зовнішнього циклу
 			}		
 		}
-
-		
-		
-		
-		
-		
+    
 		function cube(value) {
 			return value * value * value;
 		}
 		
-		
-		function print(msg){
-			document.write(msg, "<br>");
-		}
 
 		function distance(x1, y1, x2, y2){
 			var dx = x2-x1;
@@ -43,20 +33,24 @@
 			return 1;
 			return x * factorial(x-1);
 		}
-
-		//print("Привіт, " + name);
-		//print(" Ласкаво просимо на мою домашню сторінку!");
-		//total_dist = distance(0,0,2,1) + distance(2,1,3,5);
-		//print("Імовірність цього рівна: " + factorial(5)/factorial(13));
+    
+    name = 'Someone'
+    //  Don't use print function - in GC browser it reserved internal function name!
+		dprint("Привіт, " + name);
+		dprint(" Ласкаво просимо на мою домашню сторінку!");
+		total_dist = distance(0,0,2,1) + distance(2,1,3,5);
+		dprint("Імовірність цього рівна: " + factorial(5)/factorial(13));
 		</script>
 		
-		<script type="text/javascript" src="./js/scripts.js" ></script>
 	</head>
 	<body>
+    <h5>Object function</h5>
 		<script type="text/javascript">
 		var x = cube(3);
-		
-		print('Print!');
+		dprint('Print!');
+    dprint('x = ' + x);
 		</script>
+    
+    <p>Proceed to: <a href="01-type-of-data.html">Type of data. 01-type-of-data.html</a></p>
 	</body>
 </html>

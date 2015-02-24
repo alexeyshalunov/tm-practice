@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<title>
+      Object Date
+		</title>
+		<meta charset="UTF-8">
+    
+    <script type="text/javascript" src="./js/scripts.js" ></script>
+
+		
+	</head>
+	<body>
+    <h5>Object Date</h5>
+    <pre>
+    ...
+    getFullYear( ) Одержати значення року
+    getYear( ) Одержати значення року в скороченій формі
+    getMonth( ) Одержати значення місяця (січень = 0)
+    getDate( ) Одержати значення числа
+    getDay( ) Одержати значення дня тижня (неділя = 0)
+    getHours( ) Одержати значення годин в 24-годинному форматі
+    getMinutes( ) Одержати значення хвилин
+    getSeconds( ) Одержати значення секунд
+    getTime( ) Одержати значення мілісекунд із 1 .1 .70 00:00:00 GMT
+    
+    getUTCFullYear( ) Одержати значення року UTC
+    getUTCMonth( ) Одержати значення місяця UTC (січень = 0)
+    getUTCDay( ) Одержати значення день тижня UTC (неділя =  0)
+    getUTCHours( ) Одержати значення годин UTC в 24-годинному  форматі
+    getUTCMinutes( ) Одержати значення хвилин UTC
+    getUTCSeconds() Одержати значення секунд UTC
+    getUTCMilliseconds( ) Одержати значення мілісекунд UTC з 1 .1 .70  00:00:00 GMT
+    
+    setYear(значення) Встановити рік (чотиризначний)
+    SetFullYear(значення) Встановити рік
+    
+    setMonth(значення) Встановити місяць (січень = 0)
+    setDate(значення) Встановити число
+    setDay(значення) Встановити день тижня (неділя = 0)
+    setHours(значення) Встановити години в 24-годинному форматі
+    setMinutes(значення) Встановити хвилини
+    setSeconds(значення) Встановити секунди
+    setMilliseconds(значення) Встановити мілісекунди з 1 .1 .70 00:00:00 GMT
+    setUTCFullYear(значення) Встановити рік UTC
+    setUTCMonth(значення) Встановити місяць UTC (січень = 0)
+    setUTCDate(значення) Встановити число UTC
+    setUTCDay(значення) Встановити день тижня UTC (неділя = 0 )
+    setUTCHours(значення) Встановити години UTC в 24-годинному  форматі
+    setUTCMinutes(значення) Встановити хвилини UTC
+    setUTCSeconds(значення) Встановити секунди UTC
+    setUTCMilliseconds(значення) Встановити мілісекунди UTC з 1 .1 .70 00:00:00  GMT
+    getTimezoneOffset () Різниця у хвилинах стосовно GMT/UTC
+
+    <code>
+
+    </code>
+    </pre>
+		<script type="text/javascript">
+    xdate = new Date(); //змінна xdate містить поточні дату й час;
+    xdate=new Date("march, 16, 1985 12:57:20"); /* змінна xdate містить
+      наступні дату й час: Sat Mar 16 1985 12:57:20 GMT +0200 */
+    xdate=new Date("march", 16, 1985); /* змінна xdate містить наступні дату
+      й час: Sat Mar 16 1985 00:00:00 GMT +0200 */
+    xdate=new Date(85, 02, 16); /* змінна xdate містить наступні дату й час:
+      Sat Mar 16 1985 00:00:00 GMT +0200 (січень=0) */
+    xdate=new Date(720000); /* змінна xdate містить наступні дату й час: Thu Jan 01 1970 02:12:00 GMT +0200 
+      (кількість мілісекунд із 1 січня 1970 00:00:00) */
+    
+    xdate = new Date(); // поточна дата;
+    year=xdate. getFullYear(); // значення year дорівнює поточному року;
+    xdate =new Date (85,02,16); // нова дата;
+    xdate.setYear(2011); // встановити нове значення року;
+    
+		</script>    
+    <p>Proceed to: &lt;-<a href="07-object-math.html">Object Math. 07-object-math.html</a> - <a href="09-object-object.html">Object Object. 09-object-object.html</a> -&gt;</p>
+	</body>
+</html>
