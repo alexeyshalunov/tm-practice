@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                    "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+			<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+  <script>
+  $(document).ready(function(){
+
+    var mappedItems = $("li").map(function (index) {
+      var replacement = $("<li>").text($(this).text()).get(0);
+      if (index == 0) {
+        // make the first item all caps
+        $(replacement).text($(replacement).text().toUpperCase());
+      } else if (index == 1 || index == 3) {
+        // delete the second and fourth items
+        replacement = null;
+      } else if (index == 2) {
+        // make two of the third item and add some text
+        replacement = [replacement,$("<li>").get(0)];
+        $(replacement[0]).append("<b> - A</b>");
+        $(replacement[1]).append("Extra <b> - B</b>");
+      }
+
+      // replacement will be an dom element, null,
+      // or an array of dom elements
+      return replacement;
+    });
+    $("#results").append(mappedItems);
+
+  });
+  </script>
+
+  <style>
+  body { font-size:16px; }
+  ul { float:left; margin:0 30px; color:blue; }
+  #results { color:red; }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>First</li>
+
+    <li>Second</li>
+    <li>Third</li>
+    <li>Fourth</li>
+    <li>Fifth</li>
+
+  </ul>
+  <ul id="results">
+  </ul>
+  <div style="float:none; clear:both"></div>
+  <hr />
+  <p>Example from: <a href="http://jquery-docs.ru/traversing/map">http://jquery-docs.ru/traversing/map</a></p>
+  <p>Искусственный пример, показывающий некоторые функциональные возможности.</p>
+</body>
+</html>

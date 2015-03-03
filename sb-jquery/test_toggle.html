@@ -1,0 +1,120 @@
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" >
+	<title>Это jQuery.loc</title>
+	<!--link rel="stylesheet" href="./styles/default.css"-->
+	
+	<style>
+		
+    </style>
+	
+	<script src="./js/jquery-1.7.1.js"></script>
+	<!--script src="./js/test_001.js"></script>
+	<script src="./js/debug_tools.js"></script-->
+	<script type="text/javascript">
+	function paymethod(elem) {
+		var val = elem.getAttribute('value');
+		//alert('radio value: val = ' + val); // 1 | 2
+		
+		if( 1 == val ) {
+			document.getElementById('paymethod_1').style.display = "block";
+			document.getElementById('paymethod_2').style.display = "none";
+		}
+		else if ( 2 == val ) {
+			document.getElementById('paymethod_1').style.display = "none";
+			document.getElementById('paymethod_2').style.display = "block";
+		}
+	}
+	/* // not use
+	 * reset radio buttons to default check
+	 */
+	function reset_check() {
+		document.getElementById('pm_1').checked = true;
+		document.getElementById('pm_2').checked = false;
+	}
+	
+
+	</script>
+	
+</head>
+<body>
+	<h1><a href="index.html">Это jQuery.loc</a></h1>
+	<h2><a href="test_toggle.html">test_toggle.html</a></h2>
+	
+	<p>Tests in this file created for: test sfsus on billinginfo page <a href="https://dfbsalesforcesus.devhostopia.com/signup/billingInfo">https://dfbsalesforcesus.devhostopia.com/signup/billingInfo</a></p>
+	<h2>new: ---</h2>
+	
+	
+	
+	
+	
+
+<input id="pm_1" class="" name="paymethod" value="1" checked="checked" 
+	onclick="document.getElementById('paymethod_1').style.display = 'block';document.getElementById('paymethod_2').style.display = 'none';" type="radio">
+<span class="">Credit Card</span>
+
+<input id="pm_2" class="" name="paymethod" value="2" 
+	onclick="paymethod(this)" type="radio">
+<span class="">Other</span>
+
+<hr />
+<p>version: v-1  ( with jQuery )</p>
+<input id="pm_1-v1" class="" name="paymethod-v1" value="1" checked="checked" 
+	onclick="$('div#paymethod_1').show();$('div#paymethod_2').hide();" type="radio">
+<span class="">Credit Card</span>
+
+<input id="pm_2-v1" class="" name="paymethod-v1" value="2" 
+	onclick="$('div#paymethod_1').hide();$('div#paymethod_2').show();" type="radio">
+<span class="">Other</span>
+
+<div  id="paymethod_1">
+	<p class="billing_address hiddenClass">
+		<strong>Credit Card Number</strong>
+	</p>
+	<input type="text" value="xxxxxxxxxxxx4448" style="">
+	<br />
+	<input type="text" style="">
+</div>
+
+<div  id="paymethod_2" style="display:none">
+	<p class="billing_address hiddenClass">
+		<strong>Other</strong>
+	</p>
+	<input type="text" value="xxxx" style="">
+	<br />
+	<input type="text" value="qwerty" style="">
+</div>
+	<br>
+	
+	<div class="dao_sus_users_verificationValueformError parentFormbillingForm formError">
+		<p>Test : find elem with jQuery use css class, id, name, etc</p>
+	</div>
+	<input type="button" value="Test func: testFindElement" onclick="testFindElement()" />
+
+	<script type="text/javascript">
+	
+	$(document).ready(function(){
+	
+		$("input:radio[id=pm_1]").attr('checked',true);
+	
+		$("input:radio[id=pm_1-v1]").attr('checked',true);
+		
+	});
+	
+	// not use
+	function toggle_paymethod() {
+		$("div#paymethod_1").toggle();
+		$("div#paymethod_2").toggle();
+	}
+	
+	function testFindElement() {
+		$('div.parentFormbillingForm').toggle();
+	}
+	
+	
+
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery Sandbox</title>
+	<!--link rel="stylesheet" href="./styles/default.css"-->
+	
+	<style>
+		/*
+
+		*/
+
+    </style>
+	
+	<script src="./js/jquery-1.7.1.js"></script>
+	
+	<script src="./js/debug_tools.js"></script>
+	
+	<script src="./js/004.js"></script>
+	
+</head>
+<body>
+	<h1><a href="index.html">jQuery Sandbox</a></h1>
+	<h2><a href="004.html">new: Определение функции $(expr[,context])</a></h2>
+	
+	
+	<p>Найдем все элементы p, находящиеся внутри всех элементов div на странице:
+	<p>one</p>
+	<div>
+		<p>two</p>
+	</div>
+	<p>three</p>
+	<div>
+		<p>four</p>
+	</div>
+	
+	<input type="button" value="jq_expr()" onclick="jq_expr()" /><br />
+	
+	<div id="id_element">Append the find Elements here</div>
+	
+	<hr />
+	
+	<p>Еще примеры: Найдем все радиокнопки в первой форме на странице:</p>
+	<code>$("input:radio", document.forms[0]);</code>
+	
+	<p>Найдем все элементы div в XML, что прислан с сервера с помощью технологии AJAX:</p>
+	<code>$("div", xml.responseXML);</code>
+	
+</body>
+<html>
