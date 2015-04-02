@@ -1,0 +1,8 @@
+20150216 Mon Koshovyi CSS3 ; 15
+\\main\documents\Computer Science\Кошовий Віталій Володимирович\TemplateMonster
+
+5_CSS3.ppt          CSS3
+
+def font for all browsers: 
+16px Times New Roman
+
